@@ -120,6 +120,7 @@ body {
     }
     .thumb {
         width: 160px;
+        padding-top: 10px;
         @include tablet {
             width: 240px;
         }
