@@ -1,0 +1,264 @@
+body {
+  background-color: #fcfcfc;
+}
+
+.navigation-bar {
+  padding: 20px 10px 10px 10px;
+}
+
+.navigation-bar a {
+  color: #666666;
+}
+
+.navigation-bar .btn {
+  color: #666666;
+}
+
+@media (min-width: 600px) {
+  .navigation-bar {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+.hero-position {
+  padding: 20px 10px 0 10px;
+}
+
+@media (min-width: 600px) {
+  .hero-position {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+.header-title {
+  padding: 20px 10px 0 10px;
+}
+
+@media (min-width: 600px) {
+  .header-title {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+.services {
+  padding: 20px 10px 80px 10px;
+}
+
+@media (min-width: 840px) {
+  .services {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 600px) {
+  .services .flex-service {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.services .container-service {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 600px) {
+  .services .container-service {
+    display: block;
+  }
+}
+
+.services .container-service .circle {
+  width: 130px;
+  height: 130px;
+  border-radius: 65px;
+  padding: 15px 15px;
+  background-color: #f2f2f2;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+@media (min-width: 600px) {
+  .services .container-service .circle {
+    margin: auto;
+  }
+}
+
+.services .container-service .description {
+  text-align: start;
+}
+
+@media (min-width: 600px) {
+  .services .container-service .description {
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+.dark {
+  background-color: #ededed;
+}
+
+.projects {
+  padding: 20px 10px 30px 10px;
+}
+
+@media (min-width: 600px) {
+  .projects {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+.projects .cards {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding-left: 5px;
+  margin-bottom: 10px;
+}
+
+.projects .cards .cards-content {
+  padding-top: 10px;
+  text-align: start;
+}
+
+.projects .thumb {
+  width: 160px;
+}
+
+@media (min-width: 600px) {
+  .projects .thumb {
+    width: 240px;
+  }
+}
+
+.projects-more {
+  padding: 20px 10px 50px 10px;
+  height: 500px;
+  overflow-y: scroll;
+}
+
+@media (min-width: 600px) {
+  .projects-more {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+.space {
+  height: 20px;
+}
+
+.pointer {
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.pointer:hover {
+  background-color: #f2f2f2;
+}
+
+.about {
+  padding: 20px 10px 30px 10px;
+}
+
+@media (min-width: 600px) {
+  .about {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+.fariswd-year {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 0.8em;
+  background-color: #333333;
+  color: white;
+}
+
+.label-nodejs {
+  margin-bottom: 5px;
+  background-color: #f0ad4e;
+  color: white;
+}
+
+.label-dart {
+  margin-bottom: 5px;
+  background-color: #00B4AB;
+  color: white;
+}
+
+.label-arduino {
+  margin-bottom: 5px;
+  background-color: #bd79d1;
+  color: white;
+}
+
+.label-php {
+  margin-bottom: 5px;
+  background-color: #4F5D95;
+  color: white;
+}
+
+.label-python {
+  margin-bottom: 5px;
+  background-color: #3572A5;
+  color: white;
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+.material-icons.md-95 {
+  font-size: 95px;
+}
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.material-icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light {
+  color: white;
+}
+
+.material-icons.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3);
+}
+/*# sourceMappingURL=main.css.map */

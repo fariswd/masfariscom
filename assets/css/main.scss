@@ -1,0 +1,185 @@
+$tablet: 600px;
+$desktop: 840px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+body {
+    background-color: darken($color: #ffffff, $amount: 1);
+}
+
+.navigation-bar {
+    padding: 20px 10px 10px 10px;
+    
+    a {
+        color: #666666;
+    }
+
+    .btn {
+        color: #666666;
+    }
+
+    @include tablet {        
+        width: 90%;
+        margin: auto;
+    }
+}
+
+.hero-position {
+    padding: 20px 10px 0 10px;
+    @include tablet {        
+        width: 90%;
+        margin: auto;
+    }
+}
+
+.header-title {
+    padding: 20px 10px 0 10px;
+    @include tablet {        
+        width: 90%;
+        margin: auto;
+    }
+
+}
+
+.services {
+    padding: 20px 10px 80px 10px;
+    @include desktop {
+        width: 80%;
+        margin: auto;
+    }
+
+    .flex-service {
+        @include tablet {        
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+    .container-service {
+        text-align: center;
+        display: flex;
+        align-items: center;
+    
+        @include tablet {
+            display: block;
+        }
+        
+        .circle {
+            width: 130px;
+            height: 130px;
+            border-radius: 65px;
+            padding: 15px 15px;
+            background-color: darken($color: #FFFFFF, $amount: 5);
+            margin-right: 10px;
+            margin-top: 10px;
+            @include tablet {
+                margin: auto;
+            }
+        }
+        
+        .description {
+            text-align: start;
+            @include tablet {
+                margin-top: 10px;
+                text-align: center;
+            }
+        }
+    
+    }
+}
+
+.dark {
+    background-color: darken($color: #FFFFFF, $amount: 7);
+    // height: 2000px;
+}
+
+.projects {
+    padding: 20px 10px 30px 10px;
+    @include tablet {
+        width: 90%;
+        margin: auto;
+    }
+    .cards {
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        padding-left: 5px;
+        margin-bottom: 10px;
+        .cards-content {
+            padding-top: 10px;
+            text-align: start;
+        }
+    }
+    .thumb {
+        width: 160px;
+        @include tablet {
+            width: 240px;
+        }
+    }
+}
+
+.projects-more {
+    padding: 20px 10px 50px 10px;
+    height: 500px;
+    overflow-y: scroll;
+    @include tablet {
+        width: 90%;
+        margin: auto;
+    }
+}
+.space {
+    height: 20px;
+}
+.pointer {
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.pointer:hover {
+    background-color: darken($color: #FFFFFF, $amount: 5);
+}
+
+.about {
+    padding: 20px 10px 30px 10px;
+    @include tablet {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+.fariswd-year {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 0.8em;
+    background-color: darken($color: #FFFFFF, $amount: 80);
+    color: white;
+}
+
+.label-nodejs { margin-bottom: 5px; background-color: #f0ad4e; color: white;}
+.label-dart { margin-bottom: 5px; background-color: #00B4AB; color: white;}
+.label-arduino { margin-bottom: 5px; background-color: #bd79d1; color: white;}
+.label-php { margin-bottom: 5px; background-color: #4F5D95; color: white;}
+.label-python { margin-bottom: 5px; background-color: #3572A5; color: white;}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-95 { font-size: 95px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
